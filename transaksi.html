@@ -55,8 +55,17 @@
                     </li>
 
                 </ul>
-                <li class="nav-item">
-                    <a href="login.html" class="btn btn-md btn-flat btn-login">Login</a>
+                <li class="nav-item dropdown-center">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Users <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout <i class="fa fa-arrow-right"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
                 </li>
             </div>
         </div>
@@ -67,70 +76,39 @@
         <section class="details-paket">
             <div class="container">
                 <div class="row">
+                    <div class="col-md-2">
+                    </div>
+
                     <div class="col-md-8">
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title m-3 text-center">Form Data Customer</h3>
+                                <h4 class="text-center"> Invoice #0001 </h4>
                             </div>
                             <div class="card-body">
                                 <form action="">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <label for="">Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="">Email</label>
-                                            <input type="email" class="form-control">
-                                        </div>
+                                    <div class="mb-3">
+                                        <label for="">Nama</label>
+                                        <input type="text" class="form-control" placeholder="Masukan Nama">
                                     </div>
-                                    <div class="row mt-3">
-                                        <div class="col-md-6">
-                                            <label for="">No Telphone</label>
-                                            <input type="number" class="form-control" placeholder="08xxx">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="">Tanggal Acara</label>
-                                            <input type="date" class="form-control">
-                                        </div>
-
+                                    <div class="mb-3">
+                                        <label for="">Nominal Transfer</label>
+                                        <input type="number" class="form-control" placeholder="0">
                                     </div>
-                                    <div class="row mt-3">
-                                        <div class="col-md-12">
-                                            <label for="">Alamat</label>
-                                            <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
-                                        </div>
+                                    <div class="mb-3">
+                                        <label for="">Bank</label>
+                                        <input type="text" class="form-control"
+                                            placeholder="Bank BRI : 5599-0102-6967-535" readonly>
                                     </div>
-                                    <div class="btn mt-2">
-                                        <a href="transaksi.html" class="btn btn-md btn-success px-4">Save</a>
-                                        <a href="layanan.html" class="btn btn-md btn-warning px-4">Cancel</a>
+                                    <div class="mb-3">
+                                        <label for="">Bukti Transfer</label>
+                                        <input type="file" class="form-control">
                                     </div>
+                                    <button class="btn btn-danger px-4 btn-kirim">Kirim</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h3 class="card-title text-center p-2">Detail Paket</h3>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-borderless">
-                                        <tr>
-                                            <th>Paket :</th>
-                                            <td class="text-center">Engagement</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tipe Paket :</th>
-                                            <td class="text-center">Gold</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Harga Paket :</th>
-                                            <td class="text-center">Rp. 1.500.000</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-2">
                     </div>
                 </div>
             </div>
